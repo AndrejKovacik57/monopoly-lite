@@ -1,6 +1,6 @@
 package sk.stuba.fei.uim.oop;
 import java.util.Random;
-import static sk.stuba.fei.uim.oop.TakeAction.takeAction;
+
 
 public class CardBetMoney extends ChanceCards{
     public CardBetMoney() {
@@ -10,8 +10,9 @@ public class CardBetMoney extends ChanceCards{
     }
 
     public void useCard(Player player){
+        TakeAction action = new TakeAction();
         System.out.println(player.getName()+" can bet $"+getCost()+" to win $"+getReward()+" with 25% chance of succeed.");
-        if(takeAction("Press 1 to take a bet or press 0 to not take bet: ") && player.getMoney()>=getCost()){
+        if(action.takeAction("Press 1 to take a bet or press 0 to not take bet: ") && player.getMoney()>=getCost()){
 
             Random rand = new Random();
             if( getProbability() > rand.nextInt(100)+1){

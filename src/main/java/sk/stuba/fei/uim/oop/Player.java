@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Player {
     private String name;
-    private int playerId;
+    private final int playerId;
     private int space;
     private int money;
     private boolean inPrison;
@@ -38,9 +38,6 @@ public class Player {
         return playerId;
     }
 
-    public void setPlayerId(int playerId) {
-        this.playerId = playerId;
-    }
 
     public void setSpace(int space) {
         this.space = space;

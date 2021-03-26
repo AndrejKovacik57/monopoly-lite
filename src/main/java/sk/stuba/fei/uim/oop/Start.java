@@ -3,9 +3,8 @@ package sk.stuba.fei.uim.oop;
 public class Start extends SpaceOnBoard{
     private final int startReward = 2500;
 
-    public Start(String name, int space){
+    public Start(String name){
         setName(name);
-        setSpace(space);
     }
 
     public void spaceMethod(Player player) {

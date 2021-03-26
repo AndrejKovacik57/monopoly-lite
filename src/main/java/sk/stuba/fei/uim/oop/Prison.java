@@ -2,14 +2,8 @@ package sk.stuba.fei.uim.oop;
 
 public class Prison extends SpaceOnBoard{
 
-    public Prison(String name,int space){
+    public Prison(String name){
         setName(name);
-        setSpace(space);
-
-    }
-
-    public Prison(int space){
-        setSpace(space);
     }
 
 

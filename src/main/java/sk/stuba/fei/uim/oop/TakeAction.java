@@ -1,12 +1,13 @@
 package sk.stuba.fei.uim.oop;
 
-public class TakeAction extends KeyboardInput{
+public class TakeAction {
 
-    public static boolean takeAction(String text){
+    public boolean takeAction(String text){
+            KeyboardInput input = new KeyboardInput();
         int num;
         boolean answer;
         while(true){
-            num = readInt(text);
+            num = input.readInt(text);
             if(num==0){
                 answer = false;
                 break;

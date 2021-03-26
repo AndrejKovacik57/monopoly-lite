@@ -3,9 +3,8 @@ package sk.stuba.fei.uim.oop;
 public class ParkingLot extends SpaceOnBoard{
     private final int fine = 2000;
 
-    public ParkingLot(String name,int space){
+    public ParkingLot(String name){
         setName(name);
-        setSpace(space);
     }
     public void spaceMethod(Player player){
         System.out.println(player.getName()+" stepped on parking lot, he must pay fine of $"+fine);
@@ -20,7 +19,5 @@ public class ParkingLot extends SpaceOnBoard{
 
     }
 
-    public int getFine() {
-        return fine;
-    }
+
 }

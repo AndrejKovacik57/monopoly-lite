@@ -4,17 +4,16 @@ package sk.stuba.fei.uim.oop;
 public class Property extends SpaceOnBoard{
     private boolean owned;
     private int ownerId;
-    private int cost;
-    private int rent;
+    private final int cost;
+    private final int rent;
 
 
-    public Property(String name, boolean owned, int cost, int rent, int space){
+    public Property(String name, boolean owned, int cost, int rent){
         setName(name);
         this.owned  = owned;
         ownerId     = 0;
         this.cost   = cost;
         this.rent   = rent;
-        setSpace(space);
 
     }
 
@@ -68,16 +67,5 @@ public class Property extends SpaceOnBoard{
         return cost;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
-
-    public int getRent() {
-        return rent;
-    }
-
-    public void setRent(int rent) {
-        this.rent = rent;
-    }
 
 }
